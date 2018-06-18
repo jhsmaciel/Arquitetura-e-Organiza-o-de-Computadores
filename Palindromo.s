@@ -1,7 +1,7 @@
 .data
 	msg1: .asciiz "\n Digite um valor entre 10 e 10000, para ser verificado se eh palindromo ou nao: "
 	msg2: .asciiz "\n O numero eh palindromo."
-	msg3: .asciiz "\n O numero nao eh palindromo e o palindromo mais proximo é : "
+	msg3: .asciiz "\n O numero nao eh palindromo e o palindromo mais proximo Ã© : "
 .text
 main:
 
@@ -39,7 +39,7 @@ main:
 	
 	bgt $t1, 0, enquantoinvert
 	
-	beq $t4, $t2, se #T4 nao ta invertido nem nada, usar no senao!
+	beq $t4, $t2, se #T4 nao esta invertido, usar no senao!
 	j senao
 	
 	se:
@@ -59,7 +59,7 @@ main:
 	
 	enquantodez:				#enquanto ble i<=10
 			
-	add $t2, $zero,$zero #Invertido é o t2
+	add $t2, $zero,$zero #Invertido Ã© o t2
 	add $t6, $t1, $zero	 #n2	
 	
 	enquanton:
@@ -78,7 +78,7 @@ main:
 	
 	setres:
 	
-	add $t7, $t1, $zero	#t7 é o b
+	add $t7, $t1, $zero	#t7 Ã© o b
 		
 	senaotres:
 	
@@ -124,7 +124,7 @@ main:
 	
 	enquanto10:				#enquanto ble i<=110
 			
-	add $t2, $zero,$zero #Invertido é o t2
+	add $t2, $zero,$zero #Invertido Ã© o t2
 	add $t6, $t1, $zero	 #n2	
 	
 	enquantone:
@@ -143,7 +143,7 @@ main:
 	
 	se3:
 	
-	add $t7, $t1, $zero	#t7 é o b
+	add $t7, $t1, $zero	#t7 Ã© o b
 		
 	senao3:
 	
