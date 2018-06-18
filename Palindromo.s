@@ -4,7 +4,8 @@
 	msg3: .asciiz "\n O numero nao eh palindromo e o palindromo mais proximo é : "
 .text
 main:
-
+	
+	#Receber um número entre 10 e 10000, verificar se é palindromo, caso não for, mostre o mais próximo.
 	
 	add $t1, $zero, $zero
 	add $t2, $zero, $zero
